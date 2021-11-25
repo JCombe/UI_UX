@@ -166,7 +166,7 @@ const LandingP = () => {
         <div className="flex">
           {/**SubCardComp */}
           {subComps.map((subComp: any, idx: any) => {
-            subComp.idx = idx;
+            subComp.id = idx;
             return <SubComp subComp={subComp} key={idx} />;
           })}
         </div>

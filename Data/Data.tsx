@@ -112,7 +112,7 @@ export const subComps = [
     title: "Be a Club Member",
     descr:
       "Enjoy a huge library of premiu webflow components that help you solve problems faster. Copy, Paste & Customize in seconds.",
-    idx: 0,
+    id: 0,
   },
   {
     icon: (
@@ -134,6 +134,6 @@ export const subComps = [
     title: "Copy & Paste",
     descr:
       "Enjoy a huge library of premiu webflow components that help you solve problems faster. Copy, Paste & Customize in seconds.",
-    idx: 0,
+    id: 0,
   },
 ];
