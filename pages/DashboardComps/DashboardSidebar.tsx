@@ -7,7 +7,10 @@ const DashboardSidebar = () => {
       <h1 className="text-2xl mb-6">Sales Revenue</h1>
       <div className="flex flex-col justify-between">
         {dashboardSidebarData.map((sidebarData: any, idx: any) => (
-          <div className="flex w-full items-center justify-start mb-6">
+          <div
+            key={idx}
+            className="flex w-full items-center justify-start mb-6"
+          >
             <div className="w-6 h-6 mr-6">{sidebarData.icon}</div>
             <div>
               <h2 className="text-lg mb-4">{sidebarData.value}</h2>

@@ -8,7 +8,7 @@ const VertNavBar = () => {
       <div className="flex flex-col">
         <div className="W-16 h-16 text-gray-600 mb-10">{replyLogo}</div>
         {vertNavBarItems.map((item: any, idx: any) => (
-          <div className="flex w-full justify-start mb-6">
+          <div key={idx} className="flex w-full justify-start mb-6">
             <div className="mr-6">{item.icon}</div>
             <h1 className="text-md">{item.title}</h1>
           </div>

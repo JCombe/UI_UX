@@ -27,7 +27,10 @@ const DashboardCont = () => {
       </div>
       <div className="flex w-full justify-between p-6 rounded-lg bg-pink-200">
         {dashboardOveralData.map((data: any, idx: any) => (
-          <div className="flex flex-col items-start justify-between mr-16">
+          <div
+            key={idx}
+            className="flex flex-col items-start justify-between mr-16"
+          >
             <div className="w-6 h-6 mb-4">{data.icon}</div>
             <h4 className="text-sm opacity-40 mb-4">{data.title}</h4>
             <h2 className="text-lg mb-4">{data.value}</h2>
@@ -37,7 +40,10 @@ const DashboardCont = () => {
       </div>
       <div className="flex flex-wrap justify-between w-full">
         {dashboardDeviceData.map((device: any, idx: any) => (
-          <div className="flex justify-between min-w-min-w-2/5 items-center bg-blue-200 rounded-lg p-6 m-2">
+          <div
+            key={idx}
+            className="flex justify-between min-w-min-w-2/5 items-center bg-blue-200 rounded-lg p-6 m-2"
+          >
             <div className="flex flex-col mr-10">
               <h2 className="text-lg">{device.title}</h2>
               <h3 className="text-lg opacity-40">{device.subTitle}</h3>

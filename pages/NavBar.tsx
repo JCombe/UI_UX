@@ -142,22 +142,24 @@ const NavBar = () => {
 
       <div className="flex w-2/3 justify-evenly items-center">
         {/**NavBtns */}
-        {navBarItemsLeft.map((obj: any, id: any) => (
+        {navBarItemsLeft.map((obj: any, idx: any) => (
           <div
-            key={id}
+            key={idx}
             className={`${obj.style} ${
-              id === 0 ? "flex flex-row-reverse" : "flex"
+              idx === 0 ? "flex flex-row-reverse" : "flex"
             } items-center`}
           >
             <p>{obj.title}</p>
-            <div className={id === 0 ? "pr-2" : "pl-2"}>{obj.icon}</div>
+            <div className={idx === 0 ? "pr-2" : "pl-2"}>{obj.icon}</div>
           </div>
         ))}
       </div>
       <div className="flex w-1/3 items-center justify-evenly">
         {/**NavRegLog */}
-        {navBarItemsRight.map((obj: any, id: any) => (
-          <div className={obj.style}>{obj.title}</div>
+        {navBarItemsRight.map((obj: any, idx: any) => (
+          <div key={idx} className={obj.style}>
+            {obj.title}
+          </div>
         ))}
       </div>
     </div>
