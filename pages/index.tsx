@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import NavBar from "./NavBar";
-import LandingP from "./LandingP/LandingP";
+import NavBar from "../Components/NavBar/NavBar";
+import LandingP from "../Components/LandingP/LandingP";
 
 const Home: NextPage = () => {
   return (

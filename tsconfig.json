@@ -19,8 +19,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/LandingP/CategoryComp",
-    "pages/LandingP/SubscriptionComp"
+    "Components/LandingP/CategoryComp",
+    "Components/LandingP/SubscriptionComp"
   ],
   "exclude": ["node_modules"]
 }
