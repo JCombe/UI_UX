@@ -2,8 +2,6 @@ import React from "react";
 import { LandingCategories } from "../../../Data/Data";
 
 const CategoryComp = ({ category }: any) => {
-  console.log(category.id);
-
   return (
     <div
       className={`flex flex-col max-w-xs rounded-lg ${
